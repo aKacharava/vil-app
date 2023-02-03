@@ -4,6 +4,26 @@
     <meta charset="utf-8">
     <!-- Component CSS -->
     <style>
+      /* pageframe-styling */
+      .vil-pageframe-main {
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .vil-pageframe-content {
+        width: 50%;
+        border: 2px solid black;
+      }
+      
+      @media(max-width: 769px) {
+        .vil-pageframe-main {
+          flex-direction: column;
+        }
+        
+        .vil-pageframe-content {
+          width: 100%;
+        }
+      }
     </style>
     <!-- /Component CSS -->
     <!-- Head HTML -->
@@ -236,12 +256,17 @@
       <div class="main" data-simply-field="page" data-simply-content="template">
     <!-- Page HTML templates -->
     <template data-simply-template="home">
-        <h1>VIL App - Home</h1>
-        <div is="simply-component" rel="utrecht-table"></div>
-        <div is="simply-component" rel="utrecht-blockquote"></div>
-        <div is="simply-component" rel="utrecht-select"></div>
-        <div is="simply-component" rel="utrecht-button"></div>
-        
+        <div class="vil-pageframe-main">
+          <div class="vil-pageframe-content">
+            <div is="simply-component" rel="utrecht-table"></div>
+            <div is="simply-component" rel="utrecht-blockquote"></div>
+            <div is="simply-component" rel="utrecht-select"></div>
+            <div is="simply-component" rel="utrecht-button"></div>
+          </div>
+          <div class="vil-pageframe-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra dui lectus, non placerat neque pellentesque vitae. Ut varius lorem. 
+          </div>
+        </div>
     </template>
     <!-- /Page HTML templates -->
       </div>

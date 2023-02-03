@@ -1,0 +1,19 @@
+.vil-pageframe-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.vil-pageframe-content {
+  width: 50%;
+  border: 2px solid black;
+}
+
+@media(max-width: 769px) {
+  .vil-pageframe-main {
+    flex-direction: column;
+  }
+  
+  .vil-pageframe-content {
+    width: 100%;
+  }
+}
