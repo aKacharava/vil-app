@@ -214,6 +214,19 @@
     <!-- Body HTML -->
     <!-- /Body HTML -->
     <!-- Component HTML templates -->
+    <template id="utrecht-login-form">
+      <form class="utrecht-form" method="POST" action=".">
+        <input type="text" list="users" />
+        <datalist id="users">
+          <option>user 1</option>
+          <option>user 2</option>
+          <option>user 3</option>
+        </datalist>
+        <button type="submit">Inloggen</button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="">Uitleg</a>
+      </form>
+    </template>
     <template id="utrecht-blockquote">
         <blockquote>
           <p>The Quick Brown Fox Jumps Over The Lazy Dog</p>
@@ -280,10 +293,7 @@
     <template data-simply-template="home">
         <div class="vil-pageframe-main">
           <div class="vil-pageframe-content">
-            <div is="simply-component" rel="utrecht-table"></div>
-            <div is="simply-component" rel="utrecht-blockquote"></div>
-            <div is="simply-component" rel="utrecht-select"></div>
-            <div is="simply-component" rel="utrecht-button"></div>
+            <div is="simply-component" rel="utrecht-login-form"></div>
           </div>
           <div class="vil-pageframe-content">
         	Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
